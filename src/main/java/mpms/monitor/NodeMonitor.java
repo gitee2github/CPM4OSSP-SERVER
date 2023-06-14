@@ -43,4 +43,8 @@ public class NodeMonitor implements Task {
 		dbSystemMonitorLogService = SpringUtil.getBean(DbSystemMonitorLogService.class);
 	}
 
+	public static void stop() {
+		CronUtil.remove(CRON_ID);
+	}
+
 }
