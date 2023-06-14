@@ -1,6 +1,6 @@
-package io.jpom.monitor;
+package mpms.monitor;
 
-import io.jpom.model.data.MonitorModel;
+import mpms.model.data.MonitorModel;
 
 /**
  * 通知接口
