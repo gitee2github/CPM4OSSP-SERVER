@@ -76,4 +76,25 @@ public class NodeMonitor implements Task {
 	private void checkList(List<NodeModel> nodeModels) {
 	}
 
+	private void getNodeInfo(NodeModel nodeModel) {
+		JsonMessage<JSONObject> message = NodeForward.request(nodeModel, null, NodeUrl.GetDirectTop);
+		JSONObject jsonObject = message.getData();
+		if (jsonObject == null) {
+			return;
+		}
+		double disk = jsonObject.getDoubleValue("disk");
+		if (disk <= 0) {
+			return;
+		}
+
+		SystemMonitorLog log = new SystemMonitorLog();
+		log.setId(IdUtil.fastSimpleUUID());
+		log.setOccupyMemory(jsonObject.getDoubleValue("memory"));
+		log.setOccupyDisk(disk);
+		log.setOccupyCpu(jsonObject.getDoubleValue("cpu"));
+		log.setMonitorTime(jsonObject.getLongValue("time"));
+		log.setNodeId(nodeModel.getId());
+		System.console().printf("start write da\n");
+		dbSystemMonitorLogService.insert(log);
+	}
 }
