@@ -30,4 +30,17 @@ public class NodeMonitor implements Task {
 
 	private static DbSystemMonitorLogService dbSystemMonitorLogService;
 
+	/**
+	 * 开启调度
+	 */
+	public static void start() {
+		Task task = CronUtil.getScheduler().getTask(CRON_ID);
+		if (task == null) {
+			CronPattern cronPattern = Cycle.seconds30.getCronPattern();
+			CronUtil.schedule(CRON_ID, cronPattern.toString(), new NodeMonitor());
+			CronUtils.start();
+		}
+		dbSystemMonitorLogService = SpringUtil.getBean(DbSystemMonitorLogService.class);
+	}
+
 }
