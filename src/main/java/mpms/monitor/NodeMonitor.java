@@ -73,4 +73,7 @@ public class NodeMonitor implements Task {
 		this.checkList(nodeModels);
 	}
 
+	private void checkList(List<NodeModel> nodeModels) {
 	}
+
+}
