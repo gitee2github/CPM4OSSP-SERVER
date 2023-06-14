@@ -47,4 +47,30 @@ public class NodeMonitor implements Task {
 		CronUtil.remove(CRON_ID);
 	}
 
-}
+	@Override
+	public void execute() {
+		long time = System.currentTimeMillis();
+		NodeService nodeService = SpringUtil.getBean(NodeService.class);
+
+		List<NodeModel> nodeModels = nodeService.listByCycle(Cycle.seconds30);
+
+		if (Cycle.one.getCronPattern().match(time, CronUtil.getScheduler().isMatchSecond())) {
+			nodeModels.addAll(nodeService.listByCycle(Cycle.one));
+		}
+
+		if (Cycle.five.getCronPattern().match(time, CronUtil.getScheduler().isMatchSecond())) {
+			nodeModels.addAll(nodeService.listByCycle(Cycle.five));
+		}
+
+		if (Cycle.ten.getCronPattern().match(time, CronUtil.getScheduler().isMatchSecond())) {
+			nodeModels.addAll(nodeService.listByCycle(Cycle.ten));
+		}
+
+		if (Cycle.thirty.getCronPattern().match(time, CronUtil.getScheduler().isMatchSecond())) {
+			nodeModels.addAll(nodeService.listByCycle(Cycle.thirty));
+		}
+
+		this.checkList(nodeModels);
+	}
+
+	}
