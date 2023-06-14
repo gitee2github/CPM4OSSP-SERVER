@@ -1,4 +1,4 @@
-package io.jpom.permission;
+package mpms.permission;
 
 import java.lang.annotation.*;
 
