@@ -58,4 +58,9 @@ public class MonitorModel extends BaseModel {
         return projects;
     }
 
+    public void setProjects(List<NodeProject> projects) {
+        this.projects = projects;
+    }
+
+   
    }
