@@ -37,4 +37,8 @@ public class MonitorModel extends BaseModel {
      * 最后修改时间
      */
     private long modifyTime;
- }
+    /**
+     * 监控开启状态
+     */
+    private boolean status;
+    }
