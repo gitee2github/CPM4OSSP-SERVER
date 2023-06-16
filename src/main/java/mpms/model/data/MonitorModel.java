@@ -29,5 +29,8 @@ public class MonitorModel extends BaseModel {
      * 监控周期
      */
     private int cycle = Cycle.thirty.getCode();
-      
-      }
+    /**
+     * 创建人
+     */
+    private String parent;
+}
