@@ -33,4 +33,8 @@ public class MonitorModel extends BaseModel {
      * 创建人
      */
     private String parent;
-}
+    /**
+     * 最后修改时间
+     */
+    private long modifyTime;
+ }
