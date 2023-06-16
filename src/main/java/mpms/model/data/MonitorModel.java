@@ -21,5 +21,8 @@ public class MonitorModel extends BaseModel {
      * 报警联系人
      */
     private List<String> notifyUser;
-    
-    }
+    /**
+     * 异常后是否自动重启
+     */
+    private boolean autoRestart;
+   }
