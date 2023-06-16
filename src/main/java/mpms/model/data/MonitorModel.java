@@ -50,4 +50,7 @@ public class MonitorModel extends BaseModel {
         return alarm;
     }
 
+    public void setAlarm(boolean alarm) {
+        this.alarm = alarm;
+    }
   }
