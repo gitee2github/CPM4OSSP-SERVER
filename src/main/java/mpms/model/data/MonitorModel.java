@@ -45,4 +45,9 @@ public class MonitorModel extends BaseModel {
      * 报警状态
      */
     private boolean alarm;
+
+    public boolean isAlarm() {
+        return alarm;
     }
+
+  }
