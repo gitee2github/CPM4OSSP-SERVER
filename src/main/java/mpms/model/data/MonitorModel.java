@@ -53,4 +53,9 @@ public class MonitorModel extends BaseModel {
     public void setAlarm(boolean alarm) {
         this.alarm = alarm;
     }
-  }
+
+    public List<NodeProject> getProjects() {
+        return projects;
+    }
+
+   }
