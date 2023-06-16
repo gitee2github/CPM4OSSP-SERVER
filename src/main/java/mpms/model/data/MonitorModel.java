@@ -41,4 +41,8 @@ public class MonitorModel extends BaseModel {
      * 监控开启状态
      */
     private boolean status;
+    /**
+     * 报警状态
+     */
+    private boolean alarm;
     }
