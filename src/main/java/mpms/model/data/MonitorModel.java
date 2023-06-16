@@ -25,4 +25,9 @@ public class MonitorModel extends BaseModel {
      * 异常后是否自动重启
      */
     private boolean autoRestart;
-   }
+    /**
+     * 监控周期
+     */
+    private int cycle = Cycle.thirty.getCode();
+      
+      }
