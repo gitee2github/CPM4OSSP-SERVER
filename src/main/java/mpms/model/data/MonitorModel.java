@@ -17,4 +17,9 @@ public class MonitorModel extends BaseModel {
      * 监控的项目
      */
     private List<NodeProject> projects;
-}
+    /**
+     * 报警联系人
+     */
+    private List<String> notifyUser;
+    
+    }
