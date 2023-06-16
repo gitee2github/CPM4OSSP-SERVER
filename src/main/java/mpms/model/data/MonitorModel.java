@@ -13,4 +13,8 @@ import java.util.List;
  * 
  */
 public class MonitorModel extends BaseModel {
-     }
+    /**
+     * 监控的项目
+     */
+    private List<NodeProject> projects;
+}
