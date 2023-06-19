@@ -192,4 +192,24 @@ public class MonitorModel extends BaseModel {
         }
     }
 
-  }
+    public static class NodeProject extends BaseJsonModel {
+        private String node;
+        private List<String> projects;
+
+        public String getNode() {
+            return node;
+        }
+
+        public void setNode(String node) {
+            this.node = node;
+        }
+
+        public List<String> getProjects() {
+            return projects;
+        }
+
+        public void setProjects(List<String> projects) {
+            this.projects = projects;
+        }
+    }
+}
