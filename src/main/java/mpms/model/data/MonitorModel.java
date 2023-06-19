@@ -69,10 +69,4 @@ public class MonitorModel extends BaseModel {
     public void setNotifyUser(List<String> notifyUser) {
         this.notifyUser = notifyUser;
     }
-
-
-    public boolean isAutoRestart() {
-        return autoRestart;
-    }
-
    }
