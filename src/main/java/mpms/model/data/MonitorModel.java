@@ -107,4 +107,7 @@ public class MonitorModel extends BaseModel {
         return status;
     }
 
-  }
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+}
