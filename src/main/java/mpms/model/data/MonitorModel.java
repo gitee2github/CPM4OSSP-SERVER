@@ -160,4 +160,36 @@ public class MonitorModel extends BaseModel {
         }
     }
 
- }
+    /**
+     * 通知
+     */
+    public static class Notify extends BaseJsonModel {
+        private int style;
+        private String value;
+
+        public Notify() {
+        }
+
+        public Notify(NotifyType style, String value) {
+            this.style = style.getCode();
+            this.value = value;
+        }
+
+        public int getStyle() {
+            return style;
+        }
+
+        public void setStyle(int style) {
+            this.style = style;
+        }
+
+        public String getValue() {
+            return value;
+        }
+
+        public void setValue(String value) {
+            this.value = value;
+        }
+    }
+
+  }
