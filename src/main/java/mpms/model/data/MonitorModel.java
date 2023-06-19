@@ -110,4 +110,25 @@ public class MonitorModel extends BaseModel {
     public void setStatus(boolean status) {
         this.status = status;
     }
+
+    public boolean checkNodeProject(String nodeId, String projectId) {
+        List<NodeProject> projects = getProjects();
+        if (projects == null) {
+            return false;
+        }
+        for (NodeProject project : projects) {
+            if (project.getNode().equals(nodeId)) {
+                List<String> projects1 = project.getProjects();
+                if (projects1 == null) {
+                    return false;
+                }
+                for (String s : projects1) {
+                    if (projectId.equals(s)) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
 }
