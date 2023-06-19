@@ -131,4 +131,33 @@ public class MonitorModel extends BaseModel {
         }
         return false;
     }
-}
+
+    public enum NotifyType implements BaseEnum {
+        /**
+         * 通知方式
+         */
+        dingding(0, "钉钉"),
+        mail(1, "邮箱"),
+        workWx(2, "企业微信"),
+        ;
+
+        private final int code;
+        private final String desc;
+
+        NotifyType(int code, String desc) {
+            this.code = code;
+            this.desc = desc;
+        }
+
+        @Override
+        public int getCode() {
+            return code;
+        }
+
+        @Override
+        public String getDesc() {
+            return desc;
+        }
+    }
+
+ }
