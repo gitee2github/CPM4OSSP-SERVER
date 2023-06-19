@@ -86,4 +86,8 @@ public class MonitorModel extends BaseModel {
     public void setCycle(int cycle) {
         this.cycle = cycle;
     }
+
+    public String getParent() {
+        return parent;
+    }
 }
