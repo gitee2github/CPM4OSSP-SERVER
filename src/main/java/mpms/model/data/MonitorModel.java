@@ -103,4 +103,8 @@ public class MonitorModel extends BaseModel {
         this.modifyTime = modifyTime;
     }
 
-}
+    public boolean isStatus() {
+        return status;
+    }
+
+  }
