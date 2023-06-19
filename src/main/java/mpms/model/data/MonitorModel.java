@@ -1,9 +1,9 @@
-package io.jpom.model.data;
+package mpms.model.data;
 
-import io.jpom.model.BaseEnum;
-import io.jpom.model.BaseJsonModel;
-import io.jpom.model.BaseModel;
-import io.jpom.model.Cycle;
+import mpms.model.BaseEnum;
+import mpms.model.BaseJsonModel;
+import mpms.model.BaseModel;
+import mpms.model.Cycle;
 
 import java.util.List;
 
