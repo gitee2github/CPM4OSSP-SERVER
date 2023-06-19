@@ -79,4 +79,9 @@ public class MonitorModel extends BaseModel {
         this.autoRestart = autoRestart;
     }
 
-  }
+    public int getCycle() {
+        return cycle;
+    }
+
+   
+    }
