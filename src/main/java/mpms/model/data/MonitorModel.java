@@ -74,4 +74,9 @@ public class MonitorModel extends BaseModel {
     public boolean isAutoRestart() {
         return autoRestart;
     }
-}
+
+    public void setAutoRestart(boolean autoRestart) {
+        this.autoRestart = autoRestart;
+    }
+
+  }
