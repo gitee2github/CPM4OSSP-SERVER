@@ -99,4 +99,8 @@ public class MonitorModel extends BaseModel {
         return modifyTime;
     }
 
- }
+    public void setModifyTime(long modifyTime) {
+        this.modifyTime = modifyTime;
+    }
+
+}
