@@ -94,4 +94,9 @@ public class MonitorModel extends BaseModel {
     public void setParent(String parent) {
         this.parent = parent;
     }
-}
+
+    public long getModifyTime() {
+        return modifyTime;
+    }
+
+ }
