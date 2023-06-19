@@ -65,5 +65,8 @@ public class MonitorModel extends BaseModel {
     public List<String> getNotifyUser() {
         return notifyUser;
     }
-    
-   }
+
+    public void setNotifyUser(List<String> notifyUser) {
+        this.notifyUser = notifyUser;
+    }
+}
