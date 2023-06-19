@@ -90,4 +90,8 @@ public class MonitorModel extends BaseModel {
     public String getParent() {
         return parent;
     }
+
+    public void setParent(String parent) {
+        this.parent = parent;
+    }
 }
