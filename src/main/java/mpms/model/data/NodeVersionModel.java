@@ -8,4 +8,9 @@ public class NodeVersionModel extends BaseModel {
      * 节点分组
      */
     private String group;
+
+    public String getVersion() {
+        return version;
+    }
+
 }
