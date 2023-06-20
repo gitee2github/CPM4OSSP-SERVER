@@ -13,4 +13,8 @@ public class NodeVersionModel extends BaseModel {
         return version;
     }
 
-}
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
+   }
