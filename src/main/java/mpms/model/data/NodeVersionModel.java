@@ -1,6 +1,6 @@
-package io.jpom.model.data;
+package mpms.model.data;
 
-import io.jpom.model.BaseModel;
+import mpms.model.BaseModel;
 
 public class NodeVersionModel extends BaseModel {
     private String version;
