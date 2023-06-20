@@ -21,4 +21,7 @@ public class NodeVersionModel extends BaseModel {
         return group;
     }
 
-   }
+    public void setGroup(String group) {
+        this.group = group;
+    }
+}
