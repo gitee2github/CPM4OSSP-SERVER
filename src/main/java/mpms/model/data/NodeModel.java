@@ -18,5 +18,9 @@ public class NodeModel extends BaseModel {
 	private String url;
 	private String loginName;
 	private String loginPwd;
+	/**
+	 * 代理端口号
+	 */
+	private String proxyPort;
 
 }
