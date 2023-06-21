@@ -45,6 +45,10 @@ public class NodeModel extends BaseModel {
 	 */
 	private String sshId;
 
+	/**
+	 * 节点分组
+	 */
+	private String group;
 
 
 }
