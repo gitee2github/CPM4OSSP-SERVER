@@ -17,4 +17,6 @@ public class NodeModel extends BaseModel {
 
 	private String url;
 	private String loginName;
+	private String loginPwd;
+
 }
