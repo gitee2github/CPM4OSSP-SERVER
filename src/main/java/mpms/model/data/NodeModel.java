@@ -15,4 +15,5 @@ import java.util.Objects;
  */
 public class NodeModel extends BaseModel {
 
+	private String url;
 }
