@@ -26,4 +26,6 @@ public class NodeModel extends BaseModel {
 	 * 节点协议
 	 */
 	private String protocol = "http";
+
+	private String authorize;
 }
