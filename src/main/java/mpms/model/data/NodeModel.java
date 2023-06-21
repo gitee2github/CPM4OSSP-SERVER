@@ -40,4 +40,11 @@ public class NodeModel extends BaseModel {
 	 * 节点超时时间
 	 */
 	private int timeOut;
-		}
+	/**
+	 * 绑定的sshId
+	 */
+	private String sshId;
+
+
+
+}
