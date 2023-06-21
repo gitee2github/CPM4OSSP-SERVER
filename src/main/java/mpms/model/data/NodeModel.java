@@ -22,5 +22,8 @@ public class NodeModel extends BaseModel {
 	 * 代理端口号
 	 */
 	private String proxyPort;
-
+	/**
+	 * 节点协议
+	 */
+	private String protocol = "http";
 }
