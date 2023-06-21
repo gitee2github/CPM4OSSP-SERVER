@@ -28,4 +28,8 @@ public class NodeModel extends BaseModel {
 	private String protocol = "http";
 
 	private String authorize;
+	/**
+	 * 项目信息  临时信息
+	 */
+	private JSONArray projects;
 }
